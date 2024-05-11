@@ -1,0 +1,25 @@
+name: Run Vitest Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  jest-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Uses Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 22.x
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Vitest Tests
+        run: npm test
