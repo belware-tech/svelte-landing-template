@@ -16,7 +16,8 @@
 		subtitle={$t(locale, 'landing.subtitle')}
 		paragraph={$t(locale, 'landing.paragraph')}
 	>
-		<Button onClick={() => undefined}>{$t(locale, 'landing.btn.launch')}</Button>
+		<Button onClick={() => undefined}>{$t(locale, 'landing.btn.launch')}</Button
+		>
 		<Button onClick={() => undefined} variant="variant-ghost-secondary"
 			>{$t(locale, 'landing.btn.explore')}</Button
 		>

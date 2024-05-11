@@ -19,7 +19,9 @@
 		>
 			<div class="flex flex-col space-y-16 md:space-y-4">
 				<h1 class="h1 gradient-heading-primary font-bold text-6xl">{title}</h1>
-				<h1 class="h2 gradient-heading-secondary font-semibold text-4xl">{subtitle}</h1>
+				<h1 class="h2 gradient-heading-secondary font-semibold text-4xl">
+					{subtitle}
+				</h1>
 			</div>
 			<p class="text-paragraph">{paragraph}</p>
 			<div class="flex space-x-4 self-end">
@@ -28,8 +30,14 @@
 		</div>
 
 		{#if !$isMobile}
-			<div class="w-full md:w-1/2 flex justify-center items-center fill-primary-900 opacity-75">
-				<svg class="inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<div
+				class="w-full md:w-1/2 flex justify-center items-center fill-primary-900 opacity-75"
+			>
+				<svg
+					class="inset-0 h-full w-full"
+					viewBox="0 0 100 100"
+					preserveAspectRatio="none"
+				>
 					<polygon points={polygonPoints} />
 				</svg>
 			</div>

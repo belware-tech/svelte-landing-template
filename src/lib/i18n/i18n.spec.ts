@@ -6,7 +6,7 @@ import { mockTranslations } from '$lib/__mocks__/i18n.mock';
 describe('translate function', () => {
 	it('replaces variables in the template', () => {
 		const result = translate('en', mockTranslations, 'greeting', {
-			name: 'John'
+			name: 'John',
 		});
 		expect(result).toBe('Hello, John!');
 	});
@@ -18,7 +18,7 @@ describe('translate function', () => {
 
 	it('returns the key when locale is missing', () => {
 		const result = translate('en', mockTranslations, 'greetings', {
-			name: 'John'
+			name: 'John',
 		});
 		expect(result).toBe('greetings');
 	});
@@ -27,7 +27,7 @@ describe('translate function', () => {
 describe('t derived store', () => {
 	it('updates translation when locale changes', async () => {
 		let currentTranslation = get(t)(mockTranslations, 'greeting', {
-			name: 'John'
+			name: 'John',
 		});
 		expect(currentTranslation).toBe('Hello, John!');
 

@@ -31,6 +31,8 @@
 	<NavbarMobile logo={images.LOGO} {navigation} />
 </Drawer>
 <AppShell>
-	<svelte:fragment slot="header"><Navbar logo={images.LOGO} {navigation} /></svelte:fragment>
+	<svelte:fragment slot="header"
+		><Navbar logo={images.LOGO} {navigation} /></svelte:fragment
+	>
 	<slot />
 </AppShell>

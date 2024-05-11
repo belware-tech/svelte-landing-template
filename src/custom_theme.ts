@@ -96,6 +96,6 @@ export const custom_theme: CustomThemeConfig = {
 		'--color-surface-600': '32 33 42', // #20212a
 		'--color-surface-700': '26 28 35', // #1a1c23
 		'--color-surface-800': '21 22 28', // #15161c
-		'--color-surface-900': '17 18 23' // #111217
-	}
+		'--color-surface-900': '17 18 23', // #111217
+	},
 };

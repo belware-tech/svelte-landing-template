@@ -37,7 +37,12 @@
 				on:click={() => handleClickOnItem(navigationItem)}
 			>
 				<div class="flex items-center gap-4 justify-between">
-					<Icon name={navigationItem.icon} width="w-6" height="h-6" fill="fill-primary-100" />
+					<Icon
+						name={navigationItem.icon}
+						width="w-6"
+						height="h-6"
+						fill="fill-primary-100"
+					/>
 					<span class="text-left">{navigationItem.name}</span>
 				</div>
 			</button>
@@ -46,6 +51,7 @@
 
 	<button
 		class="btn p-4 variant-ringed-primary uppercase justify-self-end"
-		on:click={handleLanguageChange}>{$t(translations, 'language')} {$locale.toLowerCase()}</button
+		on:click={handleLanguageChange}
+		>{$t(translations, 'language')} {$locale.toLowerCase()}</button
 	>
 </div>

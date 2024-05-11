@@ -3,7 +3,7 @@ import LOGO from '$lib/assets/images/logo.png';
 
 const images = {
 	LANDING,
-	LOGO
+	LOGO,
 };
 
 export default images;

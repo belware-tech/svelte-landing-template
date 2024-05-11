@@ -27,7 +27,12 @@
 >
 	<svelte:fragment slot="lead">
 		<button on:click={() => smoothScroll('home')}>
-			<img src={logo} alt="Logo" data-testid="logo-test-id" class="max-h-8 md:max-h-12" />
+			<img
+				src={logo}
+				alt="Logo"
+				data-testid="logo-test-id"
+				class="max-h-8 md:max-h-12"
+			/>
 		</button>
 	</svelte:fragment>
 

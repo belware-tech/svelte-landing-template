@@ -6,17 +6,19 @@ import smoothScroll from '../smoothScroll';
 describe('smoothScroll', () => {
 	it('should call scrollIntoView on the correct element', () => {
 		const mockElement: Partial<IMockHTMLElement> = {
-			scrollIntoView: vi.fn()
+			scrollIntoView: vi.fn(),
 		};
 
-		vi.spyOn(document, 'getElementById').mockReturnValue(mockElement as HTMLElement);
+		vi.spyOn(document, 'getElementById').mockReturnValue(
+			mockElement as HTMLElement,
+		);
 
 		smoothScroll('test-section');
 
 		expect(document.getElementById).toHaveBeenCalledWith('test-section');
 
 		expect(mockElement.scrollIntoView).toHaveBeenCalledWith({
-			behavior: 'smooth'
+			behavior: 'smooth',
 		});
 
 		vi.restoreAllMocks();

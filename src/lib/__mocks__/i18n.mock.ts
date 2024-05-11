@@ -1,8 +1,8 @@
 export const mockTranslations = {
 	en: {
-		greeting: 'Hello, {{name}}!'
+		greeting: 'Hello, {{name}}!',
 	},
 	fr: {
-		greeting: 'Bonjour, {{name}}!'
-	}
+		greeting: 'Bonjour, {{name}}!',
+	},
 };

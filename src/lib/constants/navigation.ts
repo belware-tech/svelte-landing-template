@@ -10,28 +10,28 @@ const navigation: INavigation[] = [
 	{
 		name: translate(get(language), locale, 'navigation.home', {}),
 		icon: 'home',
-		onClick: () => smoothScroll('home')
+		onClick: () => smoothScroll('home'),
 	},
 	{
 		name: translate(get(language), locale, 'navigation.about-us', {}),
 		icon: 'about',
-		onClick: () => smoothScroll('about-us')
+		onClick: () => smoothScroll('about-us'),
 	},
 	{
 		name: translate(get(language), locale, 'navigation.our-mission', {}),
 		icon: 'mission',
-		onClick: () => smoothScroll('our-mission')
+		onClick: () => smoothScroll('our-mission'),
 	},
 	{
 		name: translate(get(language), locale, 'navigation.services', {}),
 		icon: 'services',
-		onClick: () => smoothScroll('services')
+		onClick: () => smoothScroll('services'),
 	},
 	{
 		name: translate(get(language), locale, 'navigation.contact-us', {}),
 		icon: 'contact',
-		onClick: () => smoothScroll('contact-us')
-	}
+		onClick: () => smoothScroll('contact-us'),
+	},
 ];
 
 export default navigation;

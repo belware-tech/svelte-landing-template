@@ -6,7 +6,7 @@ export const translate = (
 	locale: string,
 	translations: Record<string, Record<string, string>>,
 	key: string,
-	vars: Record<string, string>
+	vars: Record<string, string>,
 ): string => {
 	if (key.length < 1 || locale.length < 1) {
 		return key;
@@ -29,6 +29,10 @@ export const translate = (
 export const t = derived(
 	locale,
 	($locale) =>
-		(translations: Record<string, Record<string, string>>, key: string, vars = {}) =>
-			translate($locale, translations, key, vars)
+		(
+			translations: Record<string, Record<string, string>>,
+			key: string,
+			vars = {},
+		) =>
+			translate($locale, translations, key, vars),
 );
