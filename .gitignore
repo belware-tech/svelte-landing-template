@@ -1,6 +1,9 @@
 .DS_Store
 node_modules
 /build
+/.vscode
+/.husky
+/.github
 /.svelte-kit
 /package
 .env
